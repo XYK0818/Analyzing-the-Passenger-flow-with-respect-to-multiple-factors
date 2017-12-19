@@ -3,12 +3,12 @@ For this site, we are going to analyze the flow of passenger givn some factors. 
 
 ## Linear regression
 We selected the following features for the model and convert the data by appling ‘pd.get_dummies’ methods for regression to compute the coefficients and to make predictions for number of passengers per hour. 
-• “day_week”: whether the day was a weekday
-• “hour”: time of day
-• “station”: train over a bunch of stations
-• “conditions”: the weather conditions
-• “fog”: whether it’s fog
-• “meantemp”: the temperature of that time
+- “day_week”: whether the day was a weekday
+- “hour”: time of day
+- “station”: train over a bunch of stations
+- “conditions”: the weather conditions
+- “fog”: whether it’s fog
+- “meantemp”: the temperature of that time
 
 We use residual error to show how well the model fit the data. Usually, the residual closer to normal distribution means the fitting result is better. As we can see, the regression using sm is more like a normal distribution.
 Rss is used to measure how close the data can be fitted to regression line.As for OLS using Statsmodel, the rss is about 42% and it’s quite stable. So the regression model can be used to predict the passenger flow. As for the SGDregressor module from sklearn, the linear regression model explains about 40% of the variability of the Entries_num_hourly variable. And it’s varies when we apply this model a few times. It would not be a good enough model for creating a precise model to predict passenger flow. It’s more suitable to study the effects of changes in some of the predictor values (e.g. weather, time of day, day of week, etc). The result shows that different linear regression models have different degree of applicability among some specific problems. 
