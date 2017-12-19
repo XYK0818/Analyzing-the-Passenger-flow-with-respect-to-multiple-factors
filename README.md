@@ -1,8 +1,4 @@
-# NYC-subway-analysis
-
-This is optional project for machine learning
-
-Analyzing the Passenger flow with respect to multiple factors
+# Analyzing the Passenger flow with respect to multiple factors
 For this site, we are going to analyze the flow of passenger givn some factors. The data set contains the factors such as barometric pressure, wind speed, temperature, daytime, day of the week and the indicidence of fog etc. among with the volumn of passengers flow through some units or stations.
 
 ## Linear regression
